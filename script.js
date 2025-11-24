@@ -1,4 +1,5 @@
-const navButtons = document.querySelectorAll('.nav-item');
+const navItems = document.querySelectorAll('.nav-item');
+const accordions = document.querySelectorAll('.nav-accordion');
 const searchInput = document.getElementById('searchInput');
 const cardGrid = document.getElementById('cardGrid');
 const resultCount = document.getElementById('resultCount');
@@ -6,22 +7,48 @@ const currentPage = document.body.dataset.page;
 
 function setActiveNav() {
   const currentHash = window.location.hash.replace('#', '');
-  const fallbackSection = currentPage === 'features' ? 'overview' : 'home';
-  const targetSection = currentHash || fallbackSection;
-  navButtons.forEach((btn) => {
-    btn.classList.remove('active');
-    const pageMatch = btn.dataset.page === currentPage;
-    const sectionMatch = btn.dataset.section === targetSection;
-    if (pageMatch && sectionMatch) {
-      btn.classList.add('active');
+  const fallbackSection = currentHash || currentPage || 'home';
+
+  navItems.forEach((item) => {
+    item.classList.remove('active');
+    const pageMatch = item.dataset.page === currentPage;
+    const sectionMatch = item.dataset.section === fallbackSection;
+
+    if (pageMatch && (sectionMatch || (!currentHash && item.dataset.section === currentPage))) {
+      item.classList.add('active');
+      const panel = item.closest('.nav-panel');
+      if (panel) {
+        panel.classList.add('open');
+        const accordion = document.querySelector(`.nav-accordion[data-target="${panel.id}"]`);
+        if (accordion) {
+          accordion.setAttribute('aria-expanded', 'true');
+        }
+      }
     }
   });
 }
 
-navButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    navButtons.forEach((btn) => btn.classList.remove('active'));
-    button.classList.add('active');
+accordions.forEach((accordion) => {
+  accordion.addEventListener('click', () => {
+    const targetId = accordion.dataset.target;
+    const panel = document.getElementById(targetId);
+    const isOpen = panel.classList.toggle('open');
+    accordion.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+});
+
+navItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    navItems.forEach((btn) => btn.classList.remove('active'));
+    item.classList.add('active');
+    const panel = item.closest('.nav-panel');
+    if (panel) {
+      panel.classList.add('open');
+      const accordion = document.querySelector(`.nav-accordion[data-target="${panel.id}"]`);
+      if (accordion) {
+        accordion.setAttribute('aria-expanded', 'true');
+      }
+    }
   });
 });
 

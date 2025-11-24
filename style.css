@@ -78,6 +78,53 @@ a {
   padding: 0 12px;
 }
 
+.nav-accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 12px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #111827;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+}
+
+.nav-accordion .text {
+  flex: 1;
+  text-align: left;
+}
+
+.nav-accordion .icon {
+  width: 22px;
+  text-align: center;
+}
+
+.nav-accordion:hover,
+.nav-accordion:focus-visible {
+  background: rgba(59, 130, 246, 0.08);
+  border-color: #dbeafe;
+  outline: none;
+}
+
+.nav-accordion[aria-expanded='true'] .chevron {
+  transform: rotate(180deg);
+}
+
+.nav-panel {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 12px;
+}
+
+.nav-panel.open {
+  display: flex;
+}
+
 .nav-item {
   display: flex;
   align-items: center;
@@ -274,10 +321,11 @@ a {
   font-size: 14px;
 }
 
-.cta {
+.card .cta {
   color: #4f46e5;
   font-weight: 700;
   font-size: 13px;
+  text-decoration: none;
 }
 
 .content--detail {
@@ -305,6 +353,10 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 16px;
+}
+
+.detail-grid--single {
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
 }
 
 .detail-card {
@@ -342,6 +394,27 @@ a {
   margin-top: 6px;
 }
 
+.figure {
+  background: #f9fafb;
+  border: 1px dashed #dbeafe;
+  border-radius: 14px;
+  padding: 12px 14px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.figure__screen {
+  height: 160px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+  display: grid;
+  place-items: center;
+  color: #4f46e5;
+  font-weight: 700;
+  border: 1px solid #dbeafe;
+}
+
 .pill {
   display: inline-flex;
   align-items: center;
@@ -353,6 +426,46 @@ a {
   font-weight: 600;
   font-size: 12px;
   width: fit-content;
+}
+
+.term-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.term-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.term-title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.term-desc {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.term-alt {
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 10px 12px;
+  color: #1f2937;
+  font-size: 13px;
+}
+
+.caution-grid .detail-card {
+  min-height: 220px;
 }
 
 @media (max-width: 1024px) {

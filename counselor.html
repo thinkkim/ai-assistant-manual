@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI상담가이드 매뉴얼</title>
+  <title>상담사 화면 | AI상담가이드</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body data-page="home">
+<body data-page="counselor">
   <div class="app">
     <aside class="sidebar">
       <div class="logo">
@@ -26,8 +26,8 @@
           </button>
           <div class="nav-panel open" id="counselor">
             <a class="nav-item" data-section="counselor" data-page="counselor" href="counselor.html">상담사 화면 소개</a>
-            <a class="nav-item" data-section="login" data-page="counselor" href="counselor.html#login">1.1 로그인</a>
-            <a class="nav-item" data-section="stt" data-page="counselor" href="counselor.html#stt">1.2 실시간 상담 STT</a>
+            <a class="nav-item" data-section="login" data-page="counselor" href="#login">1.1 로그인</a>
+            <a class="nav-item" data-section="stt" data-page="counselor" href="#stt">1.2 실시간 상담 STT</a>
           </div>
 
           <button class="nav-accordion" data-target="management" aria-expanded="true">
@@ -63,11 +63,11 @@
       <button class="guide-button">가이드모드</button>
     </aside>
 
-    <main class="content" id="home">
+    <main class="content content--detail" id="counselor-page">
       <header class="top-bar">
-        <div class="search">
-          <input type="search" id="searchInput" placeholder="내용을 검색하세요" aria-label="내용 검색">
-          <span class="search-icon">🔍</span>
+        <div>
+          <p class="breadcrumb">1. 상담사 화면</p>
+          <h1>상담사 화면 예시</h1>
         </div>
         <div class="user-area">
           <button class="btn-outline">매뉴얼 자료 및 안내</button>
@@ -76,62 +76,41 @@
         </div>
       </header>
 
-      <section class="welcome">
-        <div>
-          <h1>AI상담가이드에 오신 것을 환영합니다</h1>
-          <p>상담사 화면, 관리 메뉴, 용어, 주의사항을 한 눈에 확인하세요.</p>
-        </div>
-        <span class="subtle" id="resultCount">6개의 카드가 검색되었습니다.</span>
+      <section class="intro">
+        <p>상담사 시점에서 로그인, 실시간 상담 STT를 진행할 때 필요한 화면 구성을 살펴보세요. 각 화면은 실제 사용 흐름대로 스크린과 주요 포인트를 제공해 줍니다.</p>
       </section>
 
-      <section class="card-grid" id="cardGrid">
-        <article class="card" data-keywords="상담사 화면 로그인 stt">
-          <div class="card-icon" aria-hidden="true">🧑‍💼</div>
-          <div>
-            <h2>상담사 화면</h2>
-            <p>로그인부터 실시간 STT까지 상담사가 보는 화면 흐름을 소개합니다.</p>
+      <section class="detail-grid detail-grid--single">
+        <article id="login" class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">1.1 로그인</div>
+            <h2>안전한 로그인 플로우</h2>
           </div>
-          <a class="cta" href="counselor.html">자세히 보기 →</a>
+          <p class="detail-card__desc">이메일·휴대폰 기반의 로그인과 2단계 인증 코드를 입력하는 화면입니다. 세션 만료 시 재로그인 안내와 보안 알림 모달 예시를 포함했습니다.</p>
+          <div class="figure">
+            <div class="figure__screen">로그인 화면 예시</div>
+            <ul class="detail-list">
+              <li>입력값 유효성 검사와 오류 메시지 디자인</li>
+              <li>2단계 인증 코드 입력 필드와 타이머 표시</li>
+              <li>장치 기억하기 옵션 및 보안 알림 배너</li>
+            </ul>
+          </div>
         </article>
-        <article class="card" data-keywords="로그인 계정 보안">
-          <div class="card-icon" aria-hidden="true">🔐</div>
-          <div>
-            <h2>로그인</h2>
-            <p>안전한 인증, 2단계 확인, 세션 만료 동작을 확인하세요.</p>
+
+        <article id="stt" class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">1.2 실시간 상담 STT</div>
+            <h2>음성-텍스트 변환 상담화면</h2>
           </div>
-          <a class="cta" href="counselor.html#login">바로 이동 →</a>
-        </article>
-        <article class="card" data-keywords="실시간 상담 STT 음성 텍스트">
-          <div class="card-icon" aria-hidden="true">🎙️</div>
-          <div>
-            <h2>실시간 상담 STT</h2>
-            <p>음성을 텍스트로 변환하고 상담 노트에 바로 기록하는 과정을 보여줍니다.</p>
+          <p class="detail-card__desc">실시간 음성을 텍스트로 변환하여 상담 노트에 자동 기록하고, 키워드 태깅과 요약을 함께 제공하는 화면입니다. 상담 진행, 노트, 요약 탭으로 분리된 예시 UI가 포함됩니다.</p>
+          <div class="figure">
+            <div class="figure__screen">STT 상담 화면 예시</div>
+            <ul class="detail-list">
+              <li>녹음/일시정지/종료 컨트롤과 상태 표시</li>
+              <li>실시간 텍스트 스트림과 발화자 구분 스타일</li>
+              <li>요약/액션 아이템 패널, 상담 저장 버튼 배치</li>
+            </ul>
           </div>
-          <a class="cta" href="counselor.html#stt">바로 이동 →</a>
-        </article>
-        <article class="card" data-keywords="관리 메뉴 대시보드 상담평가">
-          <div class="card-icon" aria-hidden="true">🗂️</div>
-          <div>
-            <h2>관리 메뉴</h2>
-            <p>상담 성과를 모니터링하고 평가 지표를 관리하는 화면을 살펴봅니다.</p>
-          </div>
-          <a class="cta" href="management.html">자세히 보기 →</a>
-        </article>
-        <article class="card" data-keywords="용어 해설 용어집">
-          <div class="card-icon" aria-hidden="true">📘</div>
-          <div>
-            <h2>용어 해설</h2>
-            <p>상담 현장에서 자주 쓰는 용어를 알기 쉽게 정리했습니다.</p>
-          </div>
-          <a class="cta" href="glossary.html">바로 이동 →</a>
-        </article>
-        <article class="card" data-keywords="주의사항 보안 개인정보">
-          <div class="card-icon" aria-hidden="true">⚠️</div>
-          <div>
-            <h2>주의사항</h2>
-            <p>개인정보 보호, 보안, 대화 시 주의할 점을 점검하세요.</p>
-          </div>
-          <a class="cta" href="caution.html">바로 이동 →</a>
         </article>
       </section>
     </main>

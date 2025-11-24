@@ -16,59 +16,48 @@
         <span class="logo-mark">새</span>
         <span class="logo-text">새앱</span>
       </div>
-      <nav class="nav">
+      <nav class="nav" id="navMenu">
         <div class="nav-section">
-          <div class="nav-label">새앱의 기능</div>
-          <a class="nav-item" data-section="home" data-page="home" href="index.html">
-            <span class="icon">📌</span>
-            <span class="text">상담 가이드</span>
-          </a>
-          <a class="nav-item" data-section="overview" data-page="features" href="feature-intro.html">
-            <span class="icon">🗺️</span>
-            <span class="text">기능 소개</span>
-          </a>
-        </div>
-        <div class="nav-section">
-          <div class="nav-label">상담 구성하기</div>
-          <a class="nav-item" data-section="roles" data-page="features" href="#roles">
-            <span class="icon">🧑‍⚖️</span>
-            <span class="text">역할의 이해</span>
-          </a>
-          <a class="nav-item" data-section="customers" data-page="features" href="#customers">
-            <span class="icon">🤝</span>
-            <span class="text">고객/사회적 책임</span>
-          </a>
-          <a class="nav-item" data-section="needs" data-page="features" href="#needs">
-            <span class="icon">🎯</span>
-            <span class="text">고객 요구사항</span>
-          </a>
-          <a class="nav-item" data-section="dialogue" data-page="features" href="#dialogue">
-            <span class="icon">💬</span>
-            <span class="text">상담 예시</span>
-          </a>
-          <a class="nav-item" data-section="flow" data-page="features" href="#flow">
-            <span class="icon">📂</span>
-            <span class="text">상담 시나리오 구성하기</span>
-          </a>
-          <a class="nav-item" data-section="record" data-page="features" href="#record">
+          <div class="nav-label">메뉴</div>
+          <button class="nav-accordion" data-target="counselor" aria-expanded="true">
+            <span class="icon">🧑‍💼</span>
+            <span class="text">1. 상담사 화면</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-panel open" id="counselor">
+            <a class="nav-item" data-section="counselor" data-page="counselor" href="counselor.html">상담사 화면 소개</a>
+            <a class="nav-item" data-section="login" data-page="counselor" href="counselor.html#login">1.1 로그인</a>
+            <a class="nav-item" data-section="stt" data-page="counselor" href="counselor.html#stt">1.2 실시간 상담 STT</a>
+          </div>
+
+          <button class="nav-accordion" data-target="management" aria-expanded="true">
             <span class="icon">🗂️</span>
-            <span class="text">상담 기록</span>
-          </a>
-          <a class="nav-item" data-section="tips" data-page="features" href="#tips">
-            <span class="icon">💡</span>
-            <span class="text">기타</span>
-          </a>
-        </div>
-        <div class="nav-section">
-          <div class="nav-label">주의사항</div>
-          <a class="nav-item" data-section="forms" data-page="features" href="#forms">
-            <span class="icon">📄</span>
-            <span class="text">신청서/동의서</span>
-          </a>
-          <a class="nav-item" data-section="terms" data-page="features" href="#terms">
-            <span class="icon">📚</span>
-            <span class="text">용어 해설</span>
-          </a>
+            <span class="text">2. 관리 메뉴</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-panel open" id="management">
+            <a class="nav-item" data-section="management" data-page="management" href="management.html">관리 메뉴 소개</a>
+            <a class="nav-item" data-section="dashboard" data-page="management" href="management.html#dashboard">2.1 대시보드</a>
+            <a class="nav-item" data-section="review" data-page="management" href="management.html#review">2.2 상담평가</a>
+          </div>
+
+          <button class="nav-accordion" data-target="glossary" aria-expanded="true">
+            <span class="icon">📘</span>
+            <span class="text">3. 용어 해설</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-panel open" id="glossary">
+            <a class="nav-item" data-section="glossary" data-page="glossary" href="glossary.html">3. 용어 해설</a>
+          </div>
+
+          <button class="nav-accordion" data-target="caution" aria-expanded="true">
+            <span class="icon">⚠️</span>
+            <span class="text">4. 주의사항</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-panel open" id="caution">
+            <a class="nav-item" data-section="caution" data-page="caution" href="caution.html">4. 주의사항</a>
+          </div>
         </div>
       </nav>
       <button class="guide-button">가이드모드</button>
@@ -77,8 +66,8 @@
     <main class="content content--detail" id="overview">
       <header class="top-bar">
         <div>
-          <p class="breadcrumb">새앱의 기능</p>
-          <h1>기능 소개</h1>
+          <p class="breadcrumb">기능 안내</p>
+          <h1>추가 기능 소개</h1>
         </div>
         <div class="user-area">
           <button class="btn-outline">매뉴얼 자료 및 안내</button>
@@ -87,8 +76,8 @@
         </div>
       </header>
 
-      <section class="intro"> 
-        <p>상담 설계부터 기록까지 이어지는 AI상담가이드의 핵심 기능을 한눈에 확인하세요. 각 기능을 선택하면 목적, 활용 방법, 기대 효과를 바로 확인할 수 있습니다.</p>
+      <section class="intro">
+        <p>상담 설계부터 기록까지 이어지는 AI상담가이드의 확장 기능을 한눈에 확인하세요. 각 기능을 선택해 목적, 활용 방법, 기대 효과를 바로 확인할 수 있습니다.</p>
       </section>
 
       <section class="detail-grid">
@@ -162,7 +151,7 @@
             <div class="pill">상담 기록</div>
             <h2>고객 맥락을 유지하는 기록 체계</h2>
           </div>
-          <p class="detail-card__desc">상담 후속을 돕는 요약, 태그, 알림 작성 규칙을 안내합니다. 기록 모듈별 예시를 제공하여 팀 간 공유를 표준화합니다.</p>
+          <p class="detail-card__desc">상담 후속을 돕는 요약, 태그, 알림 작성 규칙을 안내합니다. 기록 모듈별 예시를 제공하여 팀간 공유를 표준화합니다.</p>
           <ul class="detail-list">
             <li>상담 요약/액션 아이템/후속 계획 필드 정의</li>
             <li>태그 체계와 권장 명명 규칙</li>

@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI상담가이드 매뉴얼</title>
+  <title>주의사항 | AI상담가이드</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body data-page="home">
+<body data-page="caution">
   <div class="app">
     <aside class="sidebar">
       <div class="logo">
@@ -63,11 +63,11 @@
       <button class="guide-button">가이드모드</button>
     </aside>
 
-    <main class="content" id="home">
+    <main class="content content--detail" id="caution-page">
       <header class="top-bar">
-        <div class="search">
-          <input type="search" id="searchInput" placeholder="내용을 검색하세요" aria-label="내용 검색">
-          <span class="search-icon">🔍</span>
+        <div>
+          <p class="breadcrumb">4. 주의사항</p>
+          <h1>운영 시 주의사항</h1>
         </div>
         <div class="user-area">
           <button class="btn-outline">매뉴얼 자료 및 안내</button>
@@ -76,62 +76,45 @@
         </div>
       </header>
 
-      <section class="welcome">
-        <div>
-          <h1>AI상담가이드에 오신 것을 환영합니다</h1>
-          <p>상담사 화면, 관리 메뉴, 용어, 주의사항을 한 눈에 확인하세요.</p>
-        </div>
-        <span class="subtle" id="resultCount">6개의 카드가 검색되었습니다.</span>
+      <section class="intro">
+        <p>개인정보 보호, 보안, 상담 윤리를 준수하기 위한 필수 점검 사항을 정리했습니다. 상담 전·중·후 단계별로 확인해야 할 체크리스트를 제공합니다.</p>
       </section>
 
-      <section class="card-grid" id="cardGrid">
-        <article class="card" data-keywords="상담사 화면 로그인 stt">
-          <div class="card-icon" aria-hidden="true">🧑‍💼</div>
-          <div>
-            <h2>상담사 화면</h2>
-            <p>로그인부터 실시간 STT까지 상담사가 보는 화면 흐름을 소개합니다.</p>
+      <section class="detail-grid detail-grid--single caution-grid">
+        <article class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">접근/보안</div>
+            <h2>계정 및 장치 보안</h2>
           </div>
-          <a class="cta" href="counselor.html">자세히 보기 →</a>
+          <ul class="detail-list">
+            <li>비인가 기기 로그인 차단, 비밀번호 주기적 변경</li>
+            <li>공용 PC 사용 시 세션 자동 종료 확인</li>
+            <li>화면 캡처·녹화 방지 정책 안내</li>
+          </ul>
         </article>
-        <article class="card" data-keywords="로그인 계정 보안">
-          <div class="card-icon" aria-hidden="true">🔐</div>
-          <div>
-            <h2>로그인</h2>
-            <p>안전한 인증, 2단계 확인, 세션 만료 동작을 확인하세요.</p>
+
+        <article class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">개인정보</div>
+            <h2>데이터 최소 수집</h2>
           </div>
-          <a class="cta" href="counselor.html#login">바로 이동 →</a>
+          <ul class="detail-list">
+            <li>주민번호·계좌번호 등 민감정보 입력 금지</li>
+            <li>통화 기록·STT 로그의 보관 기간 명시</li>
+            <li>다운로드/공유 시 마스킹 여부 재확인</li>
+          </ul>
         </article>
-        <article class="card" data-keywords="실시간 상담 STT 음성 텍스트">
-          <div class="card-icon" aria-hidden="true">🎙️</div>
-          <div>
-            <h2>실시간 상담 STT</h2>
-            <p>음성을 텍스트로 변환하고 상담 노트에 바로 기록하는 과정을 보여줍니다.</p>
+
+        <article class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">상담 윤리</div>
+            <h2>대화 시 주의사항</h2>
           </div>
-          <a class="cta" href="counselor.html#stt">바로 이동 →</a>
-        </article>
-        <article class="card" data-keywords="관리 메뉴 대시보드 상담평가">
-          <div class="card-icon" aria-hidden="true">🗂️</div>
-          <div>
-            <h2>관리 메뉴</h2>
-            <p>상담 성과를 모니터링하고 평가 지표를 관리하는 화면을 살펴봅니다.</p>
-          </div>
-          <a class="cta" href="management.html">자세히 보기 →</a>
-        </article>
-        <article class="card" data-keywords="용어 해설 용어집">
-          <div class="card-icon" aria-hidden="true">📘</div>
-          <div>
-            <h2>용어 해설</h2>
-            <p>상담 현장에서 자주 쓰는 용어를 알기 쉽게 정리했습니다.</p>
-          </div>
-          <a class="cta" href="glossary.html">바로 이동 →</a>
-        </article>
-        <article class="card" data-keywords="주의사항 보안 개인정보">
-          <div class="card-icon" aria-hidden="true">⚠️</div>
-          <div>
-            <h2>주의사항</h2>
-            <p>개인정보 보호, 보안, 대화 시 주의할 점을 점검하세요.</p>
-          </div>
-          <a class="cta" href="caution.html">바로 이동 →</a>
+          <ul class="detail-list">
+            <li>의료법·개인정보보호법 등 관련 법령 준수</li>
+            <li>위협적 발언, 차별적 표현 금지</li>
+            <li>고객 불만 시 재확인-사과-대안 제시 순으로 안내</li>
+          </ul>
         </article>
       </section>
     </main>
