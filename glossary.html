@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>용어 해설 | AI상담가이드</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="glossary">
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="logo-mark">새</span>
+        <span class="logo-text">새앱</span>
+      </div>
+      <nav class="nav" id="navMenu">
+        <div class="nav-section">
+          <div class="nav-label">메뉴</div>
+          <button class="nav-accordion" data-target="counselor" aria-expanded="true">
+            <span class="icon">🧑‍💼</span>
+            <span class="text">1. 상담사 화면</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-panel open" id="counselor">
+            <a class="nav-item" data-section="counselor" data-page="counselor" href="counselor.html">상담사 화면 소개</a>
+            <a class="nav-item" data-section="login" data-page="counselor" href="counselor.html#login">1.1 로그인</a>
+            <a class="nav-item" data-section="stt" data-page="counselor" href="counselor.html#stt">1.2 실시간 상담 STT</a>
+          </div>
+
+          <button class="nav-accordion" data-target="management" aria-expanded="true">
+            <span class="icon">🗂️</span>
+            <span class="text">2. 관리 메뉴</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-panel open" id="management">
+            <a class="nav-item" data-section="management" data-page="management" href="management.html">관리 메뉴 소개</a>
+            <a class="nav-item" data-section="dashboard" data-page="management" href="management.html#dashboard">2.1 대시보드</a>
+            <a class="nav-item" data-section="review" data-page="management" href="management.html#review">2.2 상담평가</a>
+          </div>
+
+          <button class="nav-accordion" data-target="glossary" aria-expanded="true">
+            <span class="icon">📘</span>
+            <span class="text">3. 용어 해설</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-panel open" id="glossary">
+            <a class="nav-item" data-section="glossary" data-page="glossary" href="glossary.html">3. 용어 해설</a>
+          </div>
+
+          <button class="nav-accordion" data-target="caution" aria-expanded="true">
+            <span class="icon">⚠️</span>
+            <span class="text">4. 주의사항</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-panel open" id="caution">
+            <a class="nav-item" data-section="caution" data-page="caution" href="caution.html">4. 주의사항</a>
+          </div>
+        </div>
+      </nav>
+      <button class="guide-button">가이드모드</button>
+    </aside>
+
+    <main class="content content--detail" id="glossary-page">
+      <header class="top-bar">
+        <div>
+          <p class="breadcrumb">3. 용어 해설</p>
+          <h1>자주 쓰는 용어 정리</h1>
+        </div>
+        <div class="user-area">
+          <button class="btn-outline">매뉴얼 자료 및 안내</button>
+          <span class="user">박원장 원장 | 역삼역의원</span>
+          <span class="bell" aria-hidden="true">🔔</span>
+        </div>
+      </header>
+
+      <section class="intro">
+        <p>상담 중 빈번히 등장하는 핵심 용어를 한 페이지에서 찾을 수 있도록 정리했습니다. 고객에게 설명할 때 쓰기 좋은 대체 표현도 함께 제공합니다.</p>
+      </section>
+
+      <section class="term-list">
+        <article class="term-card">
+          <div class="term-title">STT (Speech to Text)</div>
+          <p class="term-desc">음성을 실시간으로 텍스트로 변환하는 기능. 상담 기록을 자동화하고 요약에 활용합니다.</p>
+          <div class="term-alt">고객에게는 “통화 내용을 자동으로 받아 적어주는 기능”이라고 설명하세요.</div>
+        </article>
+        <article class="term-card">
+          <div class="term-title">세션 만료</div>
+          <p class="term-desc">일정 시간 활동이 없을 때 보안을 위해 자동으로 로그아웃되는 동작.</p>
+          <div class="term-alt">“잠시 자리를 비우면 자동으로 로그아웃되어 정보가 보호됩니다.”</div>
+        </article>
+        <article class="term-card">
+          <div class="term-title">KPI</div>
+          <p class="term-desc">조직 목표 달성 여부를 측정하는 핵심 성과 지표. 상담 건수, 처리 시간 등이 포함됩니다.</p>
+          <div class="term-alt">“상담 품질을 숫자로 확인하는 지표입니다.”</div>
+        </article>
+        <article class="term-card">
+          <div class="term-title">상담평가</div>
+          <p class="term-desc">상담사별 서비스 품질을 점검하고 개선 방향을 제시하기 위한 평가 절차.</p>
+          <div class="term-alt">“상담을 되돌아보고 더 좋은 응대를 위한 점검 과정”</div>
+        </article>
+        <article class="term-card">
+          <div class="term-title">개인정보 마스킹</div>
+          <p class="term-desc">주민번호, 전화번호 등 민감 정보를 화면과 로그에서 자동 가림 처리하는 기능.</p>
+          <div class="term-alt">“중요 정보는 자동으로 가려져서 노출되지 않아요.”</div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

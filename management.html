@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>관리 메뉴 | AI상담가이드</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="management">
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="logo-mark">새</span>
+        <span class="logo-text">새앱</span>
+      </div>
+      <nav class="nav" id="navMenu">
+        <div class="nav-section">
+          <div class="nav-label">메뉴</div>
+          <button class="nav-accordion" data-target="counselor" aria-expanded="true">
+            <span class="icon">🧑‍💼</span>
+            <span class="text">1. 상담사 화면</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-panel open" id="counselor">
+            <a class="nav-item" data-section="counselor" data-page="counselor" href="counselor.html">상담사 화면 소개</a>
+            <a class="nav-item" data-section="login" data-page="counselor" href="counselor.html#login">1.1 로그인</a>
+            <a class="nav-item" data-section="stt" data-page="counselor" href="counselor.html#stt">1.2 실시간 상담 STT</a>
+          </div>
+
+          <button class="nav-accordion" data-target="management" aria-expanded="true">
+            <span class="icon">🗂️</span>
+            <span class="text">2. 관리 메뉴</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-panel open" id="management">
+            <a class="nav-item" data-section="management" data-page="management" href="management.html">관리 메뉴 소개</a>
+            <a class="nav-item" data-section="dashboard" data-page="management" href="#dashboard">2.1 대시보드</a>
+            <a class="nav-item" data-section="review" data-page="management" href="#review">2.2 상담평가</a>
+          </div>
+
+          <button class="nav-accordion" data-target="glossary" aria-expanded="true">
+            <span class="icon">📘</span>
+            <span class="text">3. 용어 해설</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-panel open" id="glossary">
+            <a class="nav-item" data-section="glossary" data-page="glossary" href="glossary.html">3. 용어 해설</a>
+          </div>
+
+          <button class="nav-accordion" data-target="caution" aria-expanded="true">
+            <span class="icon">⚠️</span>
+            <span class="text">4. 주의사항</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-panel open" id="caution">
+            <a class="nav-item" data-section="caution" data-page="caution" href="caution.html">4. 주의사항</a>
+          </div>
+        </div>
+      </nav>
+      <button class="guide-button">가이드모드</button>
+    </aside>
+
+    <main class="content content--detail" id="management-page">
+      <header class="top-bar">
+        <div>
+          <p class="breadcrumb">2. 관리 메뉴</p>
+          <h1>관리 메뉴 예시</h1>
+        </div>
+        <div class="user-area">
+          <button class="btn-outline">매뉴얼 자료 및 안내</button>
+          <span class="user">박원장 원장 | 역삼역의원</span>
+          <span class="bell" aria-hidden="true">🔔</span>
+        </div>
+      </header>
+
+      <section class="intro">
+        <p>관리자는 대시보드와 상담평가를 통해 상담 품질과 운영 지표를 관리할 수 있습니다. KPI, 알림, 평가 기준을 실제 화면 예시와 함께 제공합니다.</p>
+      </section>
+
+      <section class="detail-grid detail-grid--single">
+        <article id="dashboard" class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">2.1 대시보드</div>
+            <h2>성과와 상태를 한눈에</h2>
+          </div>
+          <p class="detail-card__desc">상담 건수, 처리 시간, 고객 만족도 등의 핵심 지표를 카드와 차트로 보여주는 대시보드 예시입니다. 필터와 기간 선택 UI가 포함됩니다.</p>
+          <div class="figure">
+            <div class="figure__screen">대시보드 화면 예시</div>
+            <ul class="detail-list">
+              <li>오늘/주간/월간 KPI 카드와 추이 그래프</li>
+              <li>상담사별 성과 비교와 알림 배지</li>
+              <li>필터 패널과 CSV 내보내기 버튼 위치</li>
+            </ul>
+          </div>
+        </article>
+
+        <article id="review" class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">2.2 상담평가</div>
+            <h2>상담 품질 관리</h2>
+          </div>
+          <p class="detail-card__desc">상담사별 평가 점수, 코멘트, 개선 항목을 기록하는 화면입니다. 평가 기준표와 녹취/텍스트 리플레이 영역을 예시로 포함했습니다.</p>
+          <div class="figure">
+            <div class="figure__screen">상담평가 화면 예시</div>
+            <ul class="detail-list">
+              <li>평가 항목별 점수 입력과 자동 계산</li>
+              <li>피드백 작성, 팔로업 설정, 첨부파일 추가</li>
+              <li>녹취/텍스트 리플레이와 구간 댓글 달기</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
