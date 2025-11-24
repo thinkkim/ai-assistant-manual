@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI상담가이드 매뉴얼</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="logo-mark">새</span>
+        <span class="logo-text">새앱</span>
+      </div>
+      <nav class="nav">
+        <div class="nav-section">
+          <div class="nav-label">새앱의 기능</div>
+          <button class="nav-item active" data-section="home">
+            <span class="icon">📌</span>
+            <span class="text">상담 가이드</span>
+          </button>
+        </div>
+        <div class="nav-section">
+          <div class="nav-label">상담 구성하기</div>
+          <button class="nav-item" data-section="roles">
+            <span class="icon">🧑‍⚖️</span>
+            <span class="text">역할의 이해</span>
+          </button>
+          <button class="nav-item" data-section="customers">
+            <span class="icon">🤝</span>
+            <span class="text">고객/사회적 책임</span>
+          </button>
+          <button class="nav-item" data-section="needs">
+            <span class="icon">🎯</span>
+            <span class="text">고객 요구사항</span>
+          </button>
+          <button class="nav-item" data-section="dialogue">
+            <span class="icon">💬</span>
+            <span class="text">상담 예시</span>
+          </button>
+          <button class="nav-item" data-section="flow">
+            <span class="icon">📂</span>
+            <span class="text">상담 시나리오 구성하기</span>
+          </button>
+          <button class="nav-item" data-section="record">
+            <span class="icon">🗂️</span>
+            <span class="text">상담 기록</span>
+          </button>
+          <button class="nav-item" data-section="tips">
+            <span class="icon">💡</span>
+            <span class="text">기타</span>
+          </button>
+        </div>
+        <div class="nav-section">
+          <div class="nav-label">주의사항</div>
+          <button class="nav-item" data-section="forms">
+            <span class="icon">📄</span>
+            <span class="text">신청서/동의서</span>
+          </button>
+          <button class="nav-item" data-section="terms">
+            <span class="icon">📚</span>
+            <span class="text">용어 해설</span>
+          </button>
+        </div>
+      </nav>
+      <button class="guide-button">가이드모드</button>
+    </aside>
+
+    <main class="content" id="home">
+      <header class="top-bar">
+        <div class="search">
+          <input type="search" id="searchInput" placeholder="내용을 검색하세요" aria-label="내용 검색">
+          <span class="search-icon">🔍</span>
+        </div>
+        <div class="user-area">
+          <button class="btn-outline">매뉴얼 자료 및 안내</button>
+          <span class="user">박원장 원장 | 역삼역의원</span>
+          <span class="bell" aria-hidden="true">🔔</span>
+        </div>
+      </header>
+
+      <section class="welcome">
+        <div>
+          <h1>AI상담가이드에 오신 것을 환영합니다</h1>
+          <p>새로운 제품 기능을 확인하세요</p>
+        </div>
+        <span class="subtle" id="resultCount">6개의 카드가 검색되었습니다.</span>
+      </section>
+
+      <section class="card-grid" id="cardGrid">
+        <article class="card" data-keywords="사회자 역할 이해 사명 공정">
+          <div class="card-icon" aria-hidden="true">🧭</div>
+          <div>
+            <h2>역할의 이해(사회자/조정자)</h2>
+            <p>사회자의 사명, 주의, 사회자의 역할로 상담의 공정성 확보하기</p>
+          </div>
+          <span class="cta">개요 보기 →</span>
+        </article>
+        <article class="card" data-keywords="고객 사회적 책임 협의">
+          <div class="card-icon" aria-hidden="true">🤝</div>
+          <div>
+            <h2>고객과 사회적 책임</h2>
+            <p>고객 유형과 사회적 책임</p>
+          </div>
+          <span class="cta">개요 보기 →</span>
+        </article>
+        <article class="card" data-keywords="요구사항 니즈 파악">
+          <div class="card-icon" aria-hidden="true">🎯</div>
+          <div>
+            <h2>고객의 요구사항</h2>
+            <p>고객 요구사항 및 불만 파악</p>
+          </div>
+          <span class="cta">개요 보기 →</span>
+        </article>
+        <article class="card" data-keywords="상담 예시 사례">
+          <div class="card-icon" aria-hidden="true">💬</div>
+          <div>
+            <h2>상담 예시</h2>
+            <p>사례별 기본 대응</p>
+          </div>
+          <span class="cta">개요 보기 →</span>
+        </article>
+        <article class="card" data-keywords="시나리오 흐름 구성">
+          <div class="card-icon" aria-hidden="true">🧩</div>
+          <div>
+            <h2>상담 시나리오 구성</h2>
+            <p>상담의 흐름을 처음과 끝까지 구성하기</p>
+          </div>
+          <span class="cta">개요 보기 →</span>
+        </article>
+        <article class="card" data-keywords="상담 기록 관리">
+          <div class="card-icon" aria-hidden="true">🗂️</div>
+          <div>
+            <h2>상담 기록</h2>
+            <p>상담 기록을 유저에 맞게 구성하기</p>
+          </div>
+          <span class="cta">개요 보기 →</span>
+        </article>
+        <article class="card" data-keywords="신청서 동의서 법적">
+          <div class="card-icon" aria-hidden="true">📑</div>
+          <div>
+            <h2>신청서 및 동의서 작성</h2>
+            <p>인용하기 편한 템플릿으로 제작하기</p>
+          </div>
+          <span class="cta">개요 보기 →</span>
+        </article>
+        <article class="card" data-keywords="용어 해설 안내">
+          <div class="card-icon" aria-hidden="true">📘</div>
+          <div>
+            <h2>용어해설</h2>
+            <p>상담 중 자주 사용되는 용어 안내</p>
+          </div>
+          <span class="cta">개요 보기 →</span>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
