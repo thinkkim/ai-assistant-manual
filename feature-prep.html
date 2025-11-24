@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>상담 준비 소개 | 한국의료분쟁조정중재원 AI상담가이드</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <a class="logo" href="index.html#home" aria-label="한국의료분쟁조정중재원 홈으로 이동">한국의료분쟁조정중재원</a>
+    <nav class="top-nav" aria-label="상단 메뉴">
+      <a href="index.html#manual">사용자 매뉴얼</a>
+    </nav>
+    <form class="search" id="searchForm" role="search" aria-label="제목과 내용 검색">
+      <label class="sr-only" for="searchInput">제목 또는 내용 검색</label>
+      <input type="search" id="searchInput" name="search" placeholder="제목/내용 검색" />
+      <button type="submit">검색</button>
+    </form>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="좌측 메뉴">
+      <div class="sidebar-header">
+        <h2>메뉴</h2>
+      </div>
+      <nav>
+        <ul class="accordion" id="sidebarMenu">
+          <li class="accordion-link"><a href="index.html#home">HOME</a></li>
+
+          <li class="accordion-item">
+            <div class="accordion-header">
+              <a class="section-link" href="feature-prep.html">상담 준비 소개</a>
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="prep-menu">소메뉴</button>
+            </div>
+            <ul class="accordion-panel" id="prep-menu">
+              <li><a href="#prep-overview">준비 개요</a></li>
+              <li><a href="#prep-templates">준비 체크리스트</a></li>
+              <li><a href="#prep-hand-off">팀 공유</a></li>
+            </ul>
+          </li>
+
+          <li class="accordion-item">
+            <div class="accordion-header">
+              <a class="section-link" href="feature-dialogue.html">대화 운영 소개</a>
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="dialogue-menu">소메뉴</button>
+            </div>
+            <ul class="accordion-panel" id="dialogue-menu">
+              <li><a href="feature-dialogue.html#dialogue-structure">대화 흐름 설계</a></li>
+              <li><a href="feature-dialogue.html#dialogue-examples">추천 멘트</a></li>
+              <li><a href="feature-dialogue.html#dialogue-safety">윤리·안전</a></li>
+            </ul>
+          </li>
+
+          <li class="accordion-item">
+            <div class="accordion-header">
+              <a class="section-link" href="feature-reporting.html">성과 관리 소개</a>
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="reporting-menu">소메뉴</button>
+            </div>
+            <ul class="accordion-panel" id="reporting-menu">
+              <li><a href="feature-reporting.html#reporting-summary">성과 요약</a></li>
+              <li><a href="feature-reporting.html#reporting-history">이력 관리</a></li>
+              <li><a href="feature-reporting.html#reporting-feedback">피드백 루프</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main id="manual" class="content">
+      <section id="prep-overview" class="card content-section" data-title="상담 준비 소개" data-keywords="상담 준비 개요 목적 설정">
+        <p class="eyebrow">기능별 소개</p>
+        <h1>상담 준비 소개</h1>
+        <p class="lead">상담 목적, 대상, 민감 정보 기준을 명확히 설정해 AI 상담의 안전성과 정확도를 높입니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>무엇을 준비하나요?</h3>
+            <ul>
+              <li>상담 목표, 민원 유형, 상담 채널을 정의합니다.</li>
+              <li>민감 정보 차단 단어와 치환 규칙을 활성화합니다.</li>
+              <li>필수 안내 멘트와 상담사 소개 브리핑을 작성합니다.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>바로가기</h3>
+            <ul>
+              <li><a href="index.html#prep-briefing">상담 브리핑 설정 카드로 이동</a></li>
+              <li><a href="index.html#prep-references">참고자료 업로드 카드로 이동</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="prep-templates" class="card content-section" data-title="상담 준비 체크리스트" data-keywords="체크리스트 양식 템플릿">
+        <p class="eyebrow">소기능 구성</p>
+        <h2>상담 준비 체크리스트</h2>
+        <p class="lead">점검 항목을 템플릿으로 제공하여 비개발자도 동일한 절차를 반복 적용할 수 있습니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>항목 예시</h3>
+            <ol>
+              <li>상담 목적과 기대 결과를 한 문장으로 기록</li>
+              <li>민감 정보 필터 키워드 5개 이상 입력</li>
+              <li>브리핑 멘트 초안 저장 및 검토</li>
+              <li>관련 참고자료 1건 이상 업로드</li>
+            </ol>
+          </div>
+          <div>
+            <h3>활용 팁</h3>
+            <p>체크리스트는 복사 후 수정해 새로운 상담 유형에 맞춰 재사용할 수 있으며, 완료 여부를 색상으로 표시하면 숙련도가 올라갑니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="prep-hand-off" class="card content-section" data-title="팀 공유" data-keywords="팀 공유 핸드오프 회의록">
+        <p class="eyebrow">운영 팁</p>
+        <h2>팀 공유</h2>
+        <p class="lead">준비된 설정과 자료를 팀과 공유하여 상담 톤과 정책을 일관되게 유지합니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>공유 방식</h3>
+            <ul>
+              <li>요약 PDF를 생성해 회의 전에 배포합니다.</li>
+              <li>민감 정보 필터와 참고자료 링크를 슬랙/메일로 전달합니다.</li>
+              <li>체크리스트 완료 상태를 스프레드시트로 공유합니다.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>참고 문구</h3>
+            <p>“상담 목적, 민감 정보 차단 기준, 참고자료 링크를 확인했습니다. 필요한 수정 사항을 댓글로 남겨주세요.”</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>한국의료분쟁조정중재원 AI상담가이드 · 상담 준비 소개</p>
+    <p class="footer-note">메뉴와 본문 구조를 동일하게 유지해 다른 기능 소개 페이지도 손쉽게 확장할 수 있습니다.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

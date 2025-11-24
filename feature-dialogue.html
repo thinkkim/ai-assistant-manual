@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>대화 운영 소개 | 한국의료분쟁조정중재원 AI상담가이드</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <a class="logo" href="index.html#home" aria-label="한국의료분쟁조정중재원 홈으로 이동">한국의료분쟁조정중재원</a>
+    <nav class="top-nav" aria-label="상단 메뉴">
+      <a href="index.html#manual">사용자 매뉴얼</a>
+    </nav>
+    <form class="search" id="searchForm" role="search" aria-label="제목과 내용 검색">
+      <label class="sr-only" for="searchInput">제목 또는 내용 검색</label>
+      <input type="search" id="searchInput" name="search" placeholder="제목/내용 검색" />
+      <button type="submit">검색</button>
+    </form>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="좌측 메뉴">
+      <div class="sidebar-header">
+        <h2>메뉴</h2>
+      </div>
+      <nav>
+        <ul class="accordion" id="sidebarMenu">
+          <li class="accordion-link"><a href="index.html#home">HOME</a></li>
+
+          <li class="accordion-item">
+            <div class="accordion-header">
+              <a class="section-link" href="feature-prep.html">상담 준비 소개</a>
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="prep-menu">소메뉴</button>
+            </div>
+            <ul class="accordion-panel" id="prep-menu">
+              <li><a href="feature-prep.html#prep-overview">준비 개요</a></li>
+              <li><a href="feature-prep.html#prep-templates">준비 체크리스트</a></li>
+              <li><a href="feature-prep.html#prep-hand-off">팀 공유</a></li>
+            </ul>
+          </li>
+
+          <li class="accordion-item">
+            <div class="accordion-header">
+              <a class="section-link" href="feature-dialogue.html">대화 운영 소개</a>
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="dialogue-menu">소메뉴</button>
+            </div>
+            <ul class="accordion-panel" id="dialogue-menu">
+              <li><a href="#dialogue-structure">대화 흐름 설계</a></li>
+              <li><a href="#dialogue-examples">추천 멘트</a></li>
+              <li><a href="#dialogue-safety">윤리·안전</a></li>
+            </ul>
+          </li>
+
+          <li class="accordion-item">
+            <div class="accordion-header">
+              <a class="section-link" href="feature-reporting.html">성과 관리 소개</a>
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="reporting-menu">소메뉴</button>
+            </div>
+            <ul class="accordion-panel" id="reporting-menu">
+              <li><a href="feature-reporting.html#reporting-summary">성과 요약</a></li>
+              <li><a href="feature-reporting.html#reporting-history">이력 관리</a></li>
+              <li><a href="feature-reporting.html#reporting-feedback">피드백 루프</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main id="manual" class="content">
+      <section id="dialogue-structure" class="card content-section" data-title="대화 흐름 설계" data-keywords="점프 시나리오 대화 구조">
+        <p class="eyebrow">기능별 소개</p>
+        <h1>대화 운영 소개</h1>
+        <p class="lead">상담 흐름을 단계별로 설계하고, 조건부 점프로 민원 유형에 맞는 안내를 신속히 제공합니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>흐름 설계 핵심</h3>
+            <ul>
+              <li>초기 진단 질문, 경로 선택, 후속 안내로 나누어 설계합니다.</li>
+              <li>점프 조건을 활용해 불필요한 단계를 건너뛰고 핵심 답변으로 이동합니다.</li>
+              <li>각 단계마다 필수 멘트와 금지어를 함께 기록해 일관성을 유지합니다.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>참고 링크</h3>
+            <p>상세 점프 로직은 <a href="https://doc.danbee.ai/chatflow_jump.html" target="_blank" rel="noreferrer">Danbee ChatFlow 점프 가이드</a>를 참고해 설계하세요.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dialogue-examples" class="card content-section" data-title="추천 멘트 사례" data-keywords="추천 멘트 응답 예시 톤">
+        <p class="eyebrow">소기능 안내</p>
+        <h2>추천 멘트 사례</h2>
+        <p class="lead">상담 단계별로 바로 쓸 수 있는 멘트를 제공하고, 상황별 톤/어조를 명시합니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>대표 멘트</h3>
+            <ul>
+              <li><strong>정보 수집:</strong> “현재 상황을 더 잘 이해하기 위해 진료 시점과 의료기관명을 알려주실 수 있을까요?”</li>
+              <li><strong>신뢰 확보:</strong> “상담 내용은 비밀이 보장되며, 조정·중재 절차도 함께 안내드리겠습니다.”</li>
+              <li><strong>마무리:</strong> “다음 단계로 필요한 서류와 예상 소요 기간을 정리해 보내드리겠습니다.”</li>
+            </ul>
+          </div>
+          <div>
+            <h3>사용 팁</h3>
+            <p>멘트를 클릭하면 클립보드에 복사되도록 설정하고, 자주 쓰는 멘트는 즐겨찾기에 고정해 반복 사용을 줄입니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dialogue-safety" class="card content-section" data-title="윤리·안전" data-keywords="윤리 가이드 개인정보 보호">
+        <p class="eyebrow">운영 원칙</p>
+        <h2>윤리·안전</h2>
+        <p class="lead">상담 중 위반될 수 있는 표현을 사전 정의하고, AI가 실시간으로 표시해 상담사가 즉시 수정할 수 있도록 돕습니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>관리 포인트</h3>
+            <ul>
+              <li>개인정보, 차별적 표현, 사실 확인 규칙을 정책으로 등록합니다.</li>
+              <li>위반 표현 감지 시 대체 문구를 함께 제안해 상담 흐름을 끊지 않습니다.</li>
+              <li>윤리 규칙은 주기적으로 검토하여 최신 의료·법률 기준을 반영합니다.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>참고 문구</h3>
+            <p>“민감 정보는 본인 확인 후에만 공유되며, 상담 로그는 안전하게 보관됩니다.”</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>한국의료분쟁조정중재원 AI상담가이드 · 대화 운영 소개</p>
+    <p class="footer-note">점프 로직과 추천 멘트를 나란히 정리해 상담 흐름을 한눈에 파악할 수 있습니다.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

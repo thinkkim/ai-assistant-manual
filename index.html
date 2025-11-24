@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>한국의료분쟁조정중재원 AI상담가이드 온라인 사용자 매뉴얼</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <a class="logo" href="#home" aria-label="한국의료분쟁조정중재원 홈으로 이동">한국의료분쟁조정중재원</a>
+    <nav class="top-nav" aria-label="상단 메뉴">
+      <a href="#manual">사용자 매뉴얼</a>
+    </nav>
+    <form class="search" id="searchForm" role="search" aria-label="제목과 내용 검색">
+      <label class="sr-only" for="searchInput">제목 또는 내용 검색</label>
+      <input type="search" id="searchInput" name="search" placeholder="제목/내용 검색" />
+      <button type="submit">검색</button>
+    </form>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="좌측 메뉴">
+      <div class="sidebar-header">
+        <h2>메뉴</h2>
+      </div>
+      <nav>
+        <ul class="accordion" id="sidebarMenu">
+          <li class="accordion-link"><a href="#home">HOME</a></li>
+
+          <li class="accordion-item">
+            <div class="accordion-header">
+              <a class="section-link" href="feature-prep.html">상담 준비 소개</a>
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="prep-menu">소메뉴</button>
+            </div>
+            <ul class="accordion-panel" id="prep-menu">
+              <li><a href="#prep-overview">기능명: 상담 준비</a></li>
+              <li><a href="#prep-briefing">소기능: 상담 브리핑 설정</a></li>
+              <li><a href="#prep-references">소기능: 참고자료 업로드</a></li>
+            </ul>
+          </li>
+
+          <li class="accordion-item">
+            <div class="accordion-header">
+              <a class="section-link" href="feature-dialogue.html">대화 운영 소개</a>
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="dialogue-menu">소메뉴</button>
+            </div>
+            <ul class="accordion-panel" id="dialogue-menu">
+              <li><a href="#dialogue-flow">기능명: 대화 흐름 관리</a></li>
+              <li><a href="#dialogue-suggestions">소기능: 추천 멘트 활용</a></li>
+              <li><a href="#dialogue-ethics">소기능: 윤리 가이드 확인</a></li>
+            </ul>
+          </li>
+
+          <li class="accordion-item">
+            <div class="accordion-header">
+              <a class="section-link" href="feature-reporting.html">성과 관리 소개</a>
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="reporting-menu">소메뉴</button>
+            </div>
+            <ul class="accordion-panel" id="reporting-menu">
+              <li><a href="#reporting">기능명: 상담 결과 정리</a></li>
+              <li><a href="#history">소기능: 상담 이력 조회</a></li>
+              <li><a href="#feedback">소기능: 피드백 제출</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main id="manual" class="content">
+      <section id="home" class="card home">
+        <p class="eyebrow">홈</p>
+        <h1>한국의료분쟁조정중재원 AI상담가이드 온라인 사용자 매뉴얼</h1>
+        <p>
+          본 매뉴얼은 의료분쟁 상담을 위한 AI 상담 가이드를 쉽게 활용하고, 누구나 수정·확장할 수 있도록 설계되었습니다.
+          상단 검색창과 좌측 아코디언 메뉴를 사용하여 원하는 기능과 소기능의 설명을 빠르게 찾으세요.
+        </p>
+        <div class="home-grid">
+          <div>
+            <h3>구성</h3>
+            <ul>
+              <li>상단 메뉴: 로고(홈 버튼), 사용자 매뉴얼 바로가기, 제목/내용 검색도구</li>
+              <li>좌측 메뉴: HOME와 각 기능별 2차 메뉴로 연결되는 아코디언 구조</li>
+              <li>본문: 기능명, 기능소개, 소기능명, 소기능 소개, 참고문구로 반복되는 카드 형식</li>
+            </ul>
+          </div>
+          <div>
+            <h3>편집 가이드</h3>
+            <ul>
+              <li>좌측 메뉴의 텍스트와 링크를 수정해도 본문 구조는 유지됩니다.</li>
+              <li>새 기능을 추가하려면 본문에 카드를 복사해 제목과 설명만 바꾸세요.</li>
+              <li>스타일은 <code>style.css</code>, 동작은 <code>script.js</code>에 모아두어 유지보수가 쉽습니다.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="prep-overview" class="card content-section" data-title="상담 준비" data-keywords="상담 준비 가이드 기본 설정">
+        <p class="eyebrow">기능명</p>
+        <h2>상담 준비</h2>
+        <p class="lead">AI 상담을 시작하기 전에 상담 목적, 대상, 민감 정보 비노출 기준을 설정합니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>기능 소개</h3>
+            <p>상담 가이드가 대화 목표와 주제를 명확히 이해하도록 주요 정보를 입력하고, 민감 표현 필터를 활성화합니다.</p>
+          </div>
+          <div>
+            <h3>참고 문구</h3>
+            <p>“상담 목적과 민감 정보 기준을 다시 확인했습니다. 설정 내용을 저장하시겠습니까?”</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="prep-briefing" class="card content-section" data-title="상담 브리핑 설정" data-keywords="프롬프트 브리핑 요약">
+        <p class="eyebrow">소기능명</p>
+        <h2>상담 브리핑 설정</h2>
+        <p class="lead">대화 시작 전에 상담사가 안내할 핵심 브리핑을 3문장 내로 작성합니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>소기능 소개</h3>
+            <p>가이드 제공 문구 템플릿을 선택하거나 직접 작성하고, 민원인의 이해 수준에 맞춘 어휘 난이도를 설정합니다.</p>
+          </div>
+          <div>
+            <h3>참고 문구</h3>
+            <p>“의료분쟁 상담은 비밀이 보장되며, 필요한 경우 조정·중재 절차를 안내해 드립니다.”</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="prep-references" class="card content-section" data-title="참고자료 업로드" data-keywords="파일 업로드 증빙 자료">
+        <p class="eyebrow">소기능명</p>
+        <h2>참고자료 업로드</h2>
+        <p class="lead">분쟁 관련 서류, 상담 가이드라인, 자주 묻는 질문 자료를 첨부해 상담 맥락을 강화합니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>소기능 소개</h3>
+            <p>PDF, 이미지, 텍스트 자료를 등록하면 AI가 키워드를 추출하여 상담 시 참고하도록 저장합니다.</p>
+          </div>
+          <div>
+            <h3>참고 문구</h3>
+            <p>“자료가 업로드되었습니다. 개인정보를 포함한 내용은 마스킹 후 공유해주세요.”</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dialogue-flow" class="card content-section" data-title="대화 흐름 관리" data-keywords="대화 흐름 시나리오 점프">
+        <p class="eyebrow">기능명</p>
+        <h2>대화 흐름 관리</h2>
+        <p class="lead">상담 단계별로 안내 멘트, 질문, 다음 단계 이동 조건을 설정하여 일관된 경험을 제공합니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>기능 소개</h3>
+            <p>문의 유형에 따라 분기되는 시나리오를 설정하고, 점프 조건을 통해 빠르게 적절한 안내로 이동합니다.</p>
+          </div>
+          <div>
+            <h3>참고 문구</h3>
+            <p>“현재 상황을 더 명확히 알기 위해 진료 시점과 의료기관명을 알려주실 수 있을까요?”</p>
+          </div>
+        </div>
+        <p class="note">참조: <a href="https://doc.danbee.ai/chatflow_jump.html" target="_blank" rel="noreferrer">Danbee ChatFlow 점프 가이드</a>를 참고해 시나리오 전환 로직을 설계할 수 있습니다.</p>
+      </section>
+
+      <section id="dialogue-suggestions" class="card content-section" data-title="추천 멘트 활용" data-keywords="멘트 추천 예시 친절한 상담">
+        <p class="eyebrow">소기능명</p>
+        <h2>추천 멘트 활용</h2>
+        <p class="lead">상담 단계별로 친절한 안내 문구를 추천받고, 상황에 맞게 수정하여 저장합니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>소기능 소개</h3>
+            <p>추천 멘트를 클릭하면 즉시 클립보드에 복사되며, 자주 사용하는 문구는 즐겨찾기로 고정할 수 있습니다.</p>
+          </div>
+          <div>
+            <h3>참고 문구</h3>
+            <p>“상담 중 궁금한 점이 떠오르면 언제든 말씀해주세요. 신속히 확인해 드리겠습니다.”</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dialogue-ethics" class="card content-section" data-title="윤리 가이드 확인" data-keywords="윤리 가이드 개인정보 보호">
+        <p class="eyebrow">소기능명</p>
+        <h2>윤리 가이드 확인</h2>
+        <p class="lead">개인정보 보호, 차별 금지, 사실 확인 규칙을 상담 흐름 중 언제든 확인할 수 있습니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>소기능 소개</h3>
+            <p>상담사가 선택한 윤리 규칙을 팝업으로 보여주며, 위반 가능성이 있는 표현을 자동으로 표시합니다.</p>
+          </div>
+          <div>
+            <h3>참고 문구</h3>
+            <p>“의료 정보는 본인 확인이 된 경우에만 공유되며, 상담 내용은 안전하게 보호됩니다.”</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="reporting" class="card content-section" data-title="상담 결과 정리" data-keywords="보고서 자동 요약 결과 정리">
+        <p class="eyebrow">기능명</p>
+        <h2>상담 결과 정리</h2>
+        <p class="lead">상담 종료 후 주요 쟁점, 조치 계획, 후속 연락 일정을 자동으로 요약합니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>기능 소개</h3>
+            <p>AI가 대화 로그를 분석하여 핵심 문장을 추출하고, 상담사가 승인한 후 공유용 PDF를 생성합니다.</p>
+          </div>
+          <div>
+            <h3>참고 문구</h3>
+            <p>“요약 내용을 확인하신 후 필요한 수정 사항을 입력해 주세요. 저장 시 PDF가 생성됩니다.”</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="history" class="card content-section" data-title="상담 이력 조회" data-keywords="이력 조회 필터 검색">
+        <p class="eyebrow">소기능명</p>
+        <h2>상담 이력 조회</h2>
+        <p class="lead">상담 일자, 분쟁 유형, 담당자를 기준으로 과거 상담 기록을 검색합니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>소기능 소개</h3>
+            <p>필터를 조합해 원하는 기록을 찾고, 재사용할 멘트를 즐겨찾기나 템플릿으로 저장합니다.</p>
+          </div>
+          <div>
+            <h3>참고 문구</h3>
+            <p>“선택한 상담 기록에서 템플릿을 불러와 이번 상담 초안으로 설정하시겠습니까?”</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="feedback" class="card content-section" data-title="피드백 제출" data-keywords="피드백 평가 개선 요청">
+        <p class="eyebrow">소기능명</p>
+        <h2>피드백 제출</h2>
+        <p class="lead">상담 결과나 AI 응답 품질을 평가하고, 개선 요청을 제출합니다.</p>
+        <div class="grid-two">
+          <div>
+            <h3>소기능 소개</h3>
+            <p>5점 척도 평가와 서술형 피드백을 제공하며, 반복된 개선 요청은 우선순위가 높은 항목으로 분류됩니다.</p>
+          </div>
+          <div>
+            <h3>참고 문구</h3>
+            <p>“피드백이 접수되었습니다. 반영 결과를 이메일로 안내해 드리겠습니다.”</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>한국의료분쟁조정중재원 AI상담가이드 · 온라인 사용자 매뉴얼</p>
+    <p class="footer-note">이 매뉴얼은 비개발자도 쉽게 편집할 수 있도록 HTML, CSS, JS가 분리되어 있습니다.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
