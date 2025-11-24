@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI상담가이드 기능 소개</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="features">
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="logo-mark">새</span>
+        <span class="logo-text">새앱</span>
+      </div>
+      <nav class="nav">
+        <div class="nav-section">
+          <div class="nav-label">새앱의 기능</div>
+          <a class="nav-item" data-section="home" data-page="home" href="index.html">
+            <span class="icon">📌</span>
+            <span class="text">상담 가이드</span>
+          </a>
+          <a class="nav-item" data-section="overview" data-page="features" href="feature-intro.html">
+            <span class="icon">🗺️</span>
+            <span class="text">기능 소개</span>
+          </a>
+        </div>
+        <div class="nav-section">
+          <div class="nav-label">상담 구성하기</div>
+          <a class="nav-item" data-section="roles" data-page="features" href="#roles">
+            <span class="icon">🧑‍⚖️</span>
+            <span class="text">역할의 이해</span>
+          </a>
+          <a class="nav-item" data-section="customers" data-page="features" href="#customers">
+            <span class="icon">🤝</span>
+            <span class="text">고객/사회적 책임</span>
+          </a>
+          <a class="nav-item" data-section="needs" data-page="features" href="#needs">
+            <span class="icon">🎯</span>
+            <span class="text">고객 요구사항</span>
+          </a>
+          <a class="nav-item" data-section="dialogue" data-page="features" href="#dialogue">
+            <span class="icon">💬</span>
+            <span class="text">상담 예시</span>
+          </a>
+          <a class="nav-item" data-section="flow" data-page="features" href="#flow">
+            <span class="icon">📂</span>
+            <span class="text">상담 시나리오 구성하기</span>
+          </a>
+          <a class="nav-item" data-section="record" data-page="features" href="#record">
+            <span class="icon">🗂️</span>
+            <span class="text">상담 기록</span>
+          </a>
+          <a class="nav-item" data-section="tips" data-page="features" href="#tips">
+            <span class="icon">💡</span>
+            <span class="text">기타</span>
+          </a>
+        </div>
+        <div class="nav-section">
+          <div class="nav-label">주의사항</div>
+          <a class="nav-item" data-section="forms" data-page="features" href="#forms">
+            <span class="icon">📄</span>
+            <span class="text">신청서/동의서</span>
+          </a>
+          <a class="nav-item" data-section="terms" data-page="features" href="#terms">
+            <span class="icon">📚</span>
+            <span class="text">용어 해설</span>
+          </a>
+        </div>
+      </nav>
+      <button class="guide-button">가이드모드</button>
+    </aside>
+
+    <main class="content content--detail" id="overview">
+      <header class="top-bar">
+        <div>
+          <p class="breadcrumb">새앱의 기능</p>
+          <h1>기능 소개</h1>
+        </div>
+        <div class="user-area">
+          <button class="btn-outline">매뉴얼 자료 및 안내</button>
+          <span class="user">박원장 원장 | 역삼역의원</span>
+          <span class="bell" aria-hidden="true">🔔</span>
+        </div>
+      </header>
+
+      <section class="intro"> 
+        <p>상담 설계부터 기록까지 이어지는 AI상담가이드의 핵심 기능을 한눈에 확인하세요. 각 기능을 선택하면 목적, 활용 방법, 기대 효과를 바로 확인할 수 있습니다.</p>
+      </section>
+
+      <section class="detail-grid">
+        <article id="roles" class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">역할의 이해</div>
+            <h2>사회자/조정자 역할로 상담의 공정성 확보</h2>
+          </div>
+          <p class="detail-card__desc">상담의 방향을 제시하고 중립성을 유지하는 사회자의 태도를 설명합니다. 상황별 말하기 예시와 금지 표현을 함께 제공하여 실무에서 바로 적용할 수 있습니다.</p>
+          <ul class="detail-list">
+            <li>상담 사명과 윤리 기준 정리</li>
+            <li>분쟁 조정 시 말하기/경청 스크립트</li>
+            <li>갈등 완화용 체크리스트 제공</li>
+          </ul>
+        </article>
+
+        <article id="customers" class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">고객/사회적 책임</div>
+            <h2>고객 유형별 대응과 책임 영역 명확화</h2>
+          </div>
+          <p class="detail-card__desc">고객 세그먼트에 따른 기대치와 우선순위를 정의하고, 의료/법적 책임을 구분하여 안내합니다. 민원 발생 시 대처 흐름도도 함께 제공합니다.</p>
+          <ul class="detail-list">
+            <li>고객 페르소나별 핵심 니즈 요약</li>
+            <li>책임 범위 안내 템플릿</li>
+            <li>리스크 대응 프로토콜</li>
+          </ul>
+        </article>
+
+        <article id="needs" class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">고객 요구사항</div>
+            <h2>요구 파악과 우선순위 정렬</h2>
+          </div>
+          <p class="detail-card__desc">심층 질문 리스트와 응답 기록 양식을 제공하여 정확한 요구를 수집합니다. 우선순위 매트릭스를 통해 상담 목표를 명확히 정의합니다.</p>
+          <ul class="detail-list">
+            <li>오픈형/폐쇄형 질문 예시 20+</li>
+            <li>니즈 분류 태그와 우선순위 기준</li>
+            <li>요구사항 요약 노트 템플릿</li>
+          </ul>
+        </article>
+
+        <article id="dialogue" class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">상담 예시</div>
+            <h2>사례별 대화 스크립트</h2>
+          </div>
+          <p class="detail-card__desc">빈번한 문의 상황을 유형화하고, 상황별로 개시-진단-제안-마무리 흐름의 스크립트를 제공합니다. 톤앤매너 가이드를 포함합니다.</p>
+          <ul class="detail-list">
+            <li>민원/불만/정보요청 3종 스크립트</li>
+            <li>상황별 추천 답변 톤 가이드</li>
+            <li>추가 질문/확인 문구 모음</li>
+          </ul>
+        </article>
+
+        <article id="flow" class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">상담 시나리오</div>
+            <h2>처음부터 끝까지 이어지는 상담 흐름</h2>
+          </div>
+          <p class="detail-card__desc">서비스 안내, 이의 제기, 재방문 유도까지 이어지는 단계별 시나리오를 제공합니다. 각 단계별 목표, 역할, 체크리스트를 구조화했습니다.</p>
+          <ul class="detail-list">
+            <li>단계별 목표/담당자/준비물 정의</li>
+            <li>상황별 분기 흐름도</li>
+            <li>후속 조치 및 알림 예시</li>
+          </ul>
+        </article>
+
+        <article id="record" class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">상담 기록</div>
+            <h2>고객 맥락을 유지하는 기록 체계</h2>
+          </div>
+          <p class="detail-card__desc">상담 후속을 돕는 요약, 태그, 알림 작성 규칙을 안내합니다. 기록 모듈별 예시를 제공하여 팀 간 공유를 표준화합니다.</p>
+          <ul class="detail-list">
+            <li>상담 요약/액션 아이템/후속 계획 필드 정의</li>
+            <li>태그 체계와 권장 명명 규칙</li>
+            <li>보안/보관 정책 체크포인트</li>
+          </ul>
+        </article>
+
+        <article id="tips" class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">기타</div>
+            <h2>상담 운영 최적화 팁</h2>
+          </div>
+          <p class="detail-card__desc">AI상담가이드를 현장에 적용할 때 유용한 실무 팁과 설정 가이드를 모았습니다. 권장 모니터링 지표와 교육 자료 링크를 함께 제공합니다.</p>
+          <ul class="detail-list">
+            <li>온보딩/교육 자료 바로가기</li>
+            <li>모니터링 지표와 보고서 템플릿</li>
+            <li>자주 묻는 질문과 해결법</li>
+          </ul>
+        </article>
+
+        <article id="forms" class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">신청서/동의서</div>
+            <h2>법적 요건을 충족하는 서식 모음</h2>
+          </div>
+          <p class="detail-card__desc">서비스 신청, 개인정보 수집·이용 동의, 영상정보 동의 등 상황별 표준 서식을 제공합니다. 필수 문구와 수정 가능 범위를 명시했습니다.</p>
+          <ul class="detail-list">
+            <li>상황별 표준 서식 다운로드 링크</li>
+            <li>필수 문구 및 커스텀 가이드</li>
+            <li>서명/보관 프로세스 안내</li>
+          </ul>
+        </article>
+
+        <article id="terms" class="detail-card">
+          <div class="detail-card__header">
+            <div class="pill">용어 해설</div>
+            <h2>자주 사용하는 상담 용어 정리</h2>
+          </div>
+          <p class="detail-card__desc">상담 및 의료 현장에서 혼용되는 용어를 정리했습니다. 각 용어의 정의, 사용 시 주의사항, 고객 친화적 표현을 함께 제공합니다.</p>
+          <ul class="detail-list">
+            <li>핵심 용어 정의와 예문</li>
+            <li>오해를 줄이는 대체 표현</li>
+            <li>관련 법규/내부 정책 참고</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

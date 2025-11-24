@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-page="home">
   <div class="app">
     <aside class="sidebar">
       <div class="logo">
@@ -19,52 +19,56 @@
       <nav class="nav">
         <div class="nav-section">
           <div class="nav-label">새앱의 기능</div>
-          <button class="nav-item active" data-section="home">
+          <a class="nav-item active" data-section="home" data-page="home" href="index.html">
             <span class="icon">📌</span>
             <span class="text">상담 가이드</span>
-          </button>
+          </a>
+          <a class="nav-item" data-section="overview" data-page="features" href="feature-intro.html">
+            <span class="icon">🗺️</span>
+            <span class="text">기능 소개</span>
+          </a>
         </div>
         <div class="nav-section">
           <div class="nav-label">상담 구성하기</div>
-          <button class="nav-item" data-section="roles">
+          <a class="nav-item" data-section="roles" data-page="features" href="feature-intro.html#roles">
             <span class="icon">🧑‍⚖️</span>
             <span class="text">역할의 이해</span>
-          </button>
-          <button class="nav-item" data-section="customers">
+          </a>
+          <a class="nav-item" data-section="customers" data-page="features" href="feature-intro.html#customers">
             <span class="icon">🤝</span>
             <span class="text">고객/사회적 책임</span>
-          </button>
-          <button class="nav-item" data-section="needs">
+          </a>
+          <a class="nav-item" data-section="needs" data-page="features" href="feature-intro.html#needs">
             <span class="icon">🎯</span>
             <span class="text">고객 요구사항</span>
-          </button>
-          <button class="nav-item" data-section="dialogue">
+          </a>
+          <a class="nav-item" data-section="dialogue" data-page="features" href="feature-intro.html#dialogue">
             <span class="icon">💬</span>
             <span class="text">상담 예시</span>
-          </button>
-          <button class="nav-item" data-section="flow">
+          </a>
+          <a class="nav-item" data-section="flow" data-page="features" href="feature-intro.html#flow">
             <span class="icon">📂</span>
             <span class="text">상담 시나리오 구성하기</span>
-          </button>
-          <button class="nav-item" data-section="record">
+          </a>
+          <a class="nav-item" data-section="record" data-page="features" href="feature-intro.html#record">
             <span class="icon">🗂️</span>
             <span class="text">상담 기록</span>
-          </button>
-          <button class="nav-item" data-section="tips">
+          </a>
+          <a class="nav-item" data-section="tips" data-page="features" href="feature-intro.html#tips">
             <span class="icon">💡</span>
             <span class="text">기타</span>
-          </button>
+          </a>
         </div>
         <div class="nav-section">
           <div class="nav-label">주의사항</div>
-          <button class="nav-item" data-section="forms">
+          <a class="nav-item" data-section="forms" data-page="features" href="feature-intro.html#forms">
             <span class="icon">📄</span>
             <span class="text">신청서/동의서</span>
-          </button>
-          <button class="nav-item" data-section="terms">
+          </a>
+          <a class="nav-item" data-section="terms" data-page="features" href="feature-intro.html#terms">
             <span class="icon">📚</span>
             <span class="text">용어 해설</span>
-          </button>
+          </a>
         </div>
       </nav>
       <button class="guide-button">가이드모드</button>
